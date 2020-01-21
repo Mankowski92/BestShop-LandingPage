@@ -67,7 +67,6 @@ h1 {
   font-family: "Raleway", sans-serif;
   font-size: 3.0625rem;
   line-height: 59px;
-  padding-top: 138px;
   padding-bottom: 20px;
   letter-spacing: 0px;
 }
@@ -448,11 +447,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-}
-
-.form-and-quest-column1 {
-    display: flex;
-    flex-direction: column;
+    padding-top: 138px;
 }
 
 .form-and-quest-title {
@@ -463,4 +458,53 @@ h3 {
     font-family: "Open Sans", sans-serif;
     color: #A5A5A5;
     font-weight: 600;
+    padding-right: 25px;
 }
+
+.p-form-and-quest {
+    padding-bottom: 45px;
+}
+
+.quest-img {
+    padding-right: 15px;
+}
+
+.form-and-quest-column1 {
+    width: 50%;
+}
+
+.form-and-quest-column2 {
+    width: 50%
+}
+
+#name{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #08A6E4;
+    padding-bottom: 43px;
+    margin-bottom: 43px;
+}
+
+#email {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #08A6E4;
+    padding-bottom: 43px;
+}
+
+.label {
+    font-family: "Open Sans", sans-serif;
+    color: #08A6E4;
+    font-weight: 700;
+    font-size: 0.6875rem;
+    line-height: 0.9375rem;
+    letter-spacing: 3px;
+}
+
+.last-label {
+    display: block;
+    position: relative;
+    margin-top: 24px;
+    margin-right: 24px;
+}
+

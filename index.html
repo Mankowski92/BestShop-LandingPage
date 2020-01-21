@@ -153,16 +153,24 @@
             </div>
         </div>
         <section class="form-and-quest-container">
-            <div class="form-and-quest-column1">
-
-            </div>
             <div class="form-and-quest-column2">
+                <form>
+                    <label for="name" class="label">NAME</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email" class="label">EMAIL</label>
+                    <input type="email" id="email" name="email">
+                </form>
+                <label class="last-label">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="form-and-quest-column1">
                 <h1 class="form-and-quest-title">Any questions?</h1> <!-- mówiono nam, że nagłówki h powinny iść po kolei ale w tym wypadku nagłówek ma wymiary dokładnie jak h1 z pierwszej sekcji. Wydaje się być zasadnym jego ponowne użycie -->
                 <p class="p-form-and-quest">Leave your email address or call us!</p>
                 <div>
-                    <img src="assets/Mail%20Icon.svg"><span class="form-and-quest-span">info@bestshop.xyz</span><img src="assets/Phone%20Icon.svg"><span class="123 456 789">123 456 789</span>
+                    <img src="assets/Mail%20Icon.svg" class="quest-img"><span class="form-and-quest-span">info@bestshop.xyz</span><img src="assets/Phone%20Icon.svg" class="quest-img"><span class="form-and-quest-span">123 456 789</span>
                 </div>
-
             </div>
         </section>
     </div>
