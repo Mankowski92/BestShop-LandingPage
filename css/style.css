@@ -238,6 +238,7 @@ h3 {
 .second-boxie-row1 {
   display: flex;
   width: 50%;
+  position: relative;
 }
 
 .first-boxie-row1 {
@@ -246,10 +247,22 @@ h3 {
   flex-direction: column;
 }
 
+.background-under-macbook { /* TU DODAŁEM KSZTAŁT POD OBRAZEK MACBOOKA */
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: #FB3B64;
+    border-radius: 40px;
+    transform: rotate(-45deg);
+    right: 165px;
+}
+
 .box-macbook-img {
   display: flex;
   margin: 60px 30px 30px 30px;
   width: 65%;
+    position: relative;
+
 }
 
 .row2-box {
@@ -259,6 +272,17 @@ h3 {
 
 .first-boxie-row2 {
   width: 50%;
+    position: relative;
+}
+
+.background-under-phone { /* TU DODAŁEM KSZTAŁT POD OBRAZEK IPHONA */
+    position: absolute;
+    height: 285px;
+    width: 285px;
+    background-color: #08A6E4;
+    border-radius: 50%;
+    right: 280px;
+    bottom: 2px;
 }
 
 .second-boxie-row2 {
@@ -269,6 +293,7 @@ h3 {
 .phoneImg {
   max-width: 55%;
   margin: 0 70px;
+    position: relative;
 }
 
 .p-second-boxie-row2 {
@@ -448,6 +473,7 @@ h3 {
     justify-content: space-between;
     flex-direction: row-reverse;
     padding-top: 138px;
+    padding-bottom: 60px;
 }
 
 .form-and-quest-title {
@@ -508,3 +534,38 @@ h3 {
     margin-right: 24px;
 }
 
+
+/* PRZECHODZĘ DO FOOTERA */
+
+.footer-container {
+    box-shadow: 0 -5px 40px #00000029;
+    background-color: #F7F7F7;
+}
+
+.footer-box {
+    width: 1352px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.social-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.p-footer {
+    font-family: "Open Sans", sans-serif;
+    color: #A5A5A5;
+    font-size: 0.6875rem;
+    line-height: 0.9375rem;
+    letter-spacing: 0px;
+}
