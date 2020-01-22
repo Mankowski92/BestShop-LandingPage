@@ -503,6 +503,15 @@ h3 {
     width: 50%
 }
 
+.form-label {
+    font-family: "Open Sans", sans-serif;
+    color: #08A6E4;
+    font-weight: 700;
+    font-size: 0.6875rem;
+    line-height: 0.9375rem;
+    letter-spacing: 3px;
+}
+
 #name{
     width: 100%;
     border: none;
@@ -517,23 +526,6 @@ h3 {
     border-bottom: 2px solid #08A6E4;
     padding-bottom: 43px;
 }
-
-.label {
-    font-family: "Open Sans", sans-serif;
-    color: #08A6E4;
-    font-weight: 700;
-    font-size: 0.6875rem;
-    line-height: 0.9375rem;
-    letter-spacing: 3px;
-}
-
-.last-label {
-    display: block;
-    position: relative;
-    margin-top: 24px;
-    margin-right: 24px;
-}
-
 
 /* PRZECHODZĘ DO FOOTERA */
 
@@ -569,3 +561,65 @@ h3 {
     line-height: 0.9375rem;
     letter-spacing: 0px;
 }
+
+.last-label {
+    display: block;
+    position: relative;
+    margin-top: 24px;
+    margin-right: 24px;
+}
+
+/* DOTĄD DOBRZE - ZACZYNAM CUSTOMOWAĆ CHECBOXA */
+
+.last-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Customize the label (the container)  PRZYCISK CHECKBOX!!!!!!!!!!!!
+
+                <label class="last-label">
+                    <input type="checkbox" checked="checked">           <----------- HTML!
+                    <span class="checkmark"></span>
+                </label>
+
+.container { (w tym wypadku last-label)
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ Hide the browser's default checkbox
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+ Create a custom checkbox
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+When the checkbox is checked, add a blue background
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+
+    */
