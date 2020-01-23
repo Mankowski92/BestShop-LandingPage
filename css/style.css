@@ -527,8 +527,6 @@ h3 {
     padding-bottom: 43px;
 }
 
-/* PRZECHODZĘ DO FOOTERA */
-
 .footer-container {
     box-shadow: 0 -5px 40px #00000029;
     background-color: #F7F7F7;
@@ -565,11 +563,9 @@ h3 {
 .last-label {
     display: block;
     position: relative;
-    margin-top: 24px;
-    margin-right: 24px;
+    margin-top: 25px;
+    margin-right: 25px;
 }
-
-/* DOTĄD DOBRZE - ZACZYNAM CUSTOMOWAĆ CHECBOXA */
 
 .last-label input {
     position: absolute;
@@ -579,47 +575,32 @@ h3 {
     width: 0;
 }
 
-/* Customize the label (the container)  PRZYCISK CHECKBOX!!!!!!!!!!!!
-
-                <label class="last-label">
-                    <input type="checkbox" checked="checked">           <----------- HTML!
-                    <span class="checkmark"></span>
-                </label>
-
-.container { (w tym wypadku last-label)
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
- Hide the browser's default checkbox
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
- Create a custom checkbox
 .checkmark {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
+    height: 25px;             /* <<<<---------- customowy checkbox */
     width: 25px;
-    background-color: #eee;
+    border: 1px solid #95989A;
+    border-radius: 4px;
 }
 
-When the checkbox is checked, add a blue background
-.container input:checked ~ .checkmark {
-    background-color: #2196F3;
+.last-label input:checked ~ .checkmark {
+    background-image: url("../assets/Checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-    */
+.p-label {
+    margin-left: 50px;
+    color: #707070;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+.form-btn {
+    padding: 20px 95px;
+    background-color: #08A6E4;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 35px;
+}
