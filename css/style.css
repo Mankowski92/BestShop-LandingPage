@@ -500,7 +500,9 @@ h3 {
 }
 
 .form-and-quest-column2 {
-    width: 50%
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-label {
@@ -596,6 +598,8 @@ h3 {
     color: #707070;
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 40px;
 }
 
 .form-btn {
@@ -603,4 +607,11 @@ h3 {
     background-color: #08A6E4;
     box-shadow: 5px 10px 14px #07ACE629;
     border-radius: 35px;
+    align-self: flex-end;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 18px;
+    color: white;
 }
