@@ -21,11 +21,15 @@
   "homepage": "https://github.com/Mankowski92/BestShop-LandingPage#readme",
   "dependencies": {
     "del": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "gulp": "^4.0.2",
     "gulp-jshint": "^2.1.0",
     "gulp-sass": "^4.1.0",
     "jshint": "^2.12.0",
-    "node-sass": "^5.0.0"
+    "multiparty": "^4.2.2",
+    "node-sass": "^5.0.0",
+    "nodemailer": "^6.4.17"
   },
   "devDependencies": {
     "gulp-watch": "^5.0.1"
