@@ -170,169 +170,91 @@ body {
   }
 }
 
-/* Section icon almost done. Only icons need to be add using before pseudoemelemnts */
-
-// .three-boxes {
-//   width: 100%;
-//   height: 100%;
-// }
-
-// .three-boxex-box {
-//   display: flex;
-//   justify-content: space-between;
-//   background-color: white;
-//   padding: 30px;
-//   margin-bottom: 100px;
-//   height: 370px;
-// }
-
-// h3 {
-//   font-family: 'Raleway', sans-serif;
-//   font-size: 2.25rem;
-//   line-height: 2.6875rem;
-//   letter-spacing: 0;
-// }
-
-// .p-first-boxie-row1 {
-//   font-family: 'Raleway', sans-serif;
-//   line-height: 1.375rem;
-//   padding: 50px 150px 0 0;
-//   position: relative;
-// }
-
-// .p-first-boxie-row1::after {
-//   content: '';
-//   border-bottom: 4px solid #fb3b64;
-//   display: block;
-//   position: absolute;
-//   width: 300px;
-//   padding-top: 50px;
-// }
-
-// .second-boxie-row1 {
-//   display: flex;
-//   width: 50%;
-//   position: relative;
-// }
-
-// .first-boxie-row1 {
-//   display: flex;
-//   width: 50%;
-//   flex-direction: column;
-// }
-
-// .background-under-macbook {
-//   /* TU DODAŁEM KSZTAŁT POD OBRAZEK MACBOOKA */
-//   position: absolute;
-//   height: 200px;
-//   width: 200px;
-//   background-color: #fb3b64;
-//   border-radius: 40px;
-//   transform: rotate(-45deg);
-//   right: 165px;
-// }
-
-// .box-macbook-img {
-//   display: flex;
-//   margin: 60px 30px 30px 30px;
-//   width: 65%;
-//   position: relative;
-// }
-
-// .row2-box {
-//   display: flex;
-//   padding-top: 40px;
-// }
-
-// .first-boxie-row2 {
-//   width: 50%;
-//   position: relative;
-// }
-
-// .background-under-phone {
-//   /* TU DODAŁEM KSZTAŁT POD OBRAZEK IPHONA */
-//   position: absolute;
-//   height: 285px;
-//   width: 285px;
-//   background-color: #08a6e4;
-//   border-radius: 50%;
-//   right: 280px;
-//   bottom: 2px;
-// }
-
-// .second-boxie-row2 {
-//   width: 50%;
-//   padding-left: 150px;
-// }
-
-// .phoneImg {
-//   width: 100%;
-//   margin: 0 70px;
-//   // position: relative;
-//   height: 100%;
-// }
-
-// .p-second-boxie-row2 {
-//   font-family: 'Raleway', sans-serif;
-//   line-height: 1.375rem;
-//   padding: 50px 30px 50px 0;
-// }
-
-// .p-second-boxie-row2::after {
-//   content: '';
-//   border-bottom: 4px solid #08a6e4;
-//   display: block;
-//   position: absolute;
-//   width: 300px;
-//   padding-top: 50px;
-// }
-
-// .row3-box {
-//   display: flex;
-//   justify-content: space-between;
-//   width: 100%;
-//   height: 370px;
-// }
-
-// .row3-first-boxie {
-//   width: 50%;
-//   height: 370px;
-//   padding: 70px 30px;
-//   background-color: white;
-// }
-
-// .row3-second-boxie {
-//   width: 40%;
-//   height: 100%;
-//   background-color: #55dfb4;
-//   position: relative;
-// }
-
-// .row3-trumpet {
-//   position: absolute;
-//   width: 70%;
-//   height: 70%;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
-
-// .p-first-boxie-row3 {
-//   font-family: 'Raleway', sans-serif;
-//   line-height: 1.375rem;
-//   padding-top: 50px;
-// }
-
-// .p-first-boxie-row3::after {
-//   content: '';
-//   border-bottom: 4px solid #55dfb4;
-//   display: block;
-//   position: absolute;
-//   width: 300px;
-//   padding-top: 50px;
-// }
-
-// KONTENER Z CENAMI I PAKIETAMI
+.benefit {
+  width: 100%;
+  .benefit-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 100%;
+    .first-boxie-row1 {
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.25rem;
+        line-height: 2.6875rem;
+        letter-spacing: 0;
+      }
+      .p-first-boxie-row1 {
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.375rem;
+        padding: 50px 150px 0 0;
+        position: relative;
+      }
+      @media (max-width: 980px) {
+        .p-first-boxie-row1 {
+          padding: 50px 0 0 0;
+        }
+      }
+      .p-first-boxie-row1::after {
+        content: '';
+        border-bottom: 4px solid #fb3b64;
+        display: block;
+        position: absolute;
+        width: 300px;
+        padding-top: 50px;
+      }
+    }
+    @media (max-width: 980px) {
+      .first-boxie-row1 {
+        width: 100%;
+      }
+    }
+    .second-boxie-row1 {
+      display: flex;
+      width: 50%;
+      position: relative;
+      .background-under-macbook {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background-color: #fb3b64;
+        border-radius: 40px;
+        transform: rotate(-45deg);
+        right: 165px;
+      }
+      @media (min-width: 780px) and (max-width: 980px) {
+        .background-under-macbook {
+          height: 175px;
+          width: 175px;
+          border-radius: 35px;
+        }
+      }
+      .box-macbook-img {
+        display: flex;
+        margin: 60px 30px 30px 30px;
+        width: 65%;
+        position: relative;
+      }
+    }
+    @media (max-width: 980px) {
+      .second-boxie-row1 {
+        width: 100%;
+        padding-top: 70px;
+      }
+    }
+  }
+  @media (max-width: 980px) {
+    .benefit-box {
+      flex-direction: column;
+    }
+  }
+}
 
 .prices-conteiner {
   margin: 0 12%;
@@ -450,8 +372,6 @@ body {
   }
 }
 
-//formularz
-
 .form-and-quest-container {
   width: 70%;
   margin: auto;
@@ -546,7 +466,7 @@ body {
       }
       @media (max-width: 570px) {
         .p-label {
-          margin: 40px 0 40px 10px;
+          margin: 0 0 40px 30px;
         }
       }
     }
@@ -564,8 +484,13 @@ body {
       color: white;
       border: none;
     }
-    .form-btn:focus { 
-      outline: none; 
+    @media (max-width: 600px) {
+      .form-btn {
+        padding: 15px 40px;
+      }
+    }
+    .form-btn:focus {
+      outline: none;
     }
     .form-btn:hover {
       background-color: lighten(#08a6e4, 10%);
@@ -581,7 +506,6 @@ body {
   }
 }
 
-// Footer
 footer {
   .footer-container {
     box-shadow: 0 -5px 40px #00000029;

@@ -131,7 +131,73 @@ body header {
     .under-banner .icon-section .icon-and-info {
       width: 100%; } }
 
-/* Section icon almost done. Only icons need to be add using before pseudoemelemnts */
+.benefit {
+  width: 100%; }
+  .benefit .benefit-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 100%; }
+    .benefit .benefit-box .first-boxie-row1 {
+      display: flex;
+      width: 50%;
+      flex-direction: column; }
+      .benefit .benefit-box .first-boxie-row1 h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.25rem;
+        line-height: 2.6875rem;
+        letter-spacing: 0; }
+      .benefit .benefit-box .first-boxie-row1 .p-first-boxie-row1 {
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.375rem;
+        padding: 50px 150px 0 0;
+        position: relative; }
+      @media (max-width: 980px) {
+        .benefit .benefit-box .first-boxie-row1 .p-first-boxie-row1 {
+          padding: 50px 0 0 0; } }
+      .benefit .benefit-box .first-boxie-row1 .p-first-boxie-row1::after {
+        content: '';
+        border-bottom: 4px solid #fb3b64;
+        display: block;
+        position: absolute;
+        width: 300px;
+        padding-top: 50px; }
+    @media (max-width: 980px) {
+      .benefit .benefit-box .first-boxie-row1 {
+        width: 100%; } }
+    .benefit .benefit-box .second-boxie-row1 {
+      display: flex;
+      width: 50%;
+      position: relative; }
+      .benefit .benefit-box .second-boxie-row1 .background-under-macbook {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background-color: #fb3b64;
+        border-radius: 40px;
+        transform: rotate(-45deg);
+        right: 165px; }
+      @media (min-width: 780px) and (max-width: 980px) {
+        .benefit .benefit-box .second-boxie-row1 .background-under-macbook {
+          height: 175px;
+          width: 175px;
+          border-radius: 35px; } }
+      .benefit .benefit-box .second-boxie-row1 .box-macbook-img {
+        display: flex;
+        margin: 60px 30px 30px 30px;
+        width: 65%;
+        position: relative; }
+    @media (max-width: 980px) {
+      .benefit .benefit-box .second-boxie-row1 {
+        width: 100%;
+        padding-top: 70px; } }
+  @media (max-width: 980px) {
+    .benefit .benefit-box {
+      flex-direction: column; } }
+
 .prices-conteiner {
   margin: 0 12%;
   display: block; }
@@ -297,7 +363,7 @@ body header {
         margin: 0 0 40px 50px; }
       @media (max-width: 570px) {
         .form-and-quest-container .form-and-quest-column2 .last-label .p-label {
-          margin: 40px 0 40px 10px; } }
+          margin: 0 0 40px 30px; } }
     .form-and-quest-container .form-and-quest-column2 .form-btn {
       padding: 20px 95px;
       background-color: #08a6e4;
@@ -311,6 +377,9 @@ body header {
       line-height: 18px;
       color: white;
       border: none; }
+    @media (max-width: 600px) {
+      .form-and-quest-container .form-and-quest-column2 .form-btn {
+        padding: 15px 40px; } }
     .form-and-quest-container .form-and-quest-column2 .form-btn:focus {
       outline: none; }
     .form-and-quest-container .form-and-quest-column2 .form-btn:hover {

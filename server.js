@@ -40,7 +40,7 @@ app.post("/send", (req, res) => {
     console.log(data);
     const mail = {
       sender: `${data.name} <${data.email}>`,
-      to: process.env.EMAIL, // receiver email,
+      to: process.env.EMAIL,
       subject: "New contact request",
       text: `${data.name} <${data.email}> \n${data.message}`,
     };
