@@ -1,0 +1,33 @@
+{
+  "name": "bestshop-landingpage",
+  "version": "1.0.0",
+  "description": "Landing page for demo purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mankowski92/BestShop-LandingPage.git"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "Marcin Mankowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mankowski92/BestShop-LandingPage/issues"
+  },
+  "homepage": "https://github.com/Mankowski92/BestShop-LandingPage#readme",
+  "dependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sass": "^4.1.0",
+    "jshint": "^2.12.0",
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp-watch": "^5.0.1"
+  }
+}
