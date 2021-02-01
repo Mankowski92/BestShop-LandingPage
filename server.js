@@ -21,8 +21,6 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-(EMAIL = testmail03072020),
-  (PASS = PaSS1234),
   transporter.verify(function (error, success) {
     if (error) {
       console.log(error);
