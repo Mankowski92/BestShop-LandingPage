@@ -3,11 +3,15 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
 require("dotenv").config();
+const helmet = require("helmet");
+const compression = require('compression');
 
 // const PORT = process.env.PORT || 5000;
 const PORT = 5000;
 
 const app = express();
+app.use(helmet());
+app.use(compression());
 
 app.use(cors({ origin: "*" }));
 
