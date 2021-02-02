@@ -5,8 +5,15 @@
   "main": "server.js",
   "scripts": {
       "start": "node server.js",
-      "test": "echo \"Error: no test specified\" && exit 1"  //optional
+      "test": "echo \"Error: no test specified\" && exit 1"
     },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mankowski92/BestShop-LandingPage.git"
+  },
+  "keywords": [
+    "demo"
+  ],
   "author": "Marcin Mankowski",
   "license": "ISC",
   "bugs": {
