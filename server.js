@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require("cors");
+// const cors = require("cors");
 const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
 require("dotenv").config();
@@ -13,7 +13,7 @@ const app = express();
 app.use(helmet());
 app.use(compression());
 
-app.use(cors({ origin: "*" }));
+// app.use(cors({ origin: "*" }));
 
 app.use("/public", express.static(process.cwd() + "/public"));
 
