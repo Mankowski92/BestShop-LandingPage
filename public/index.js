@@ -7,7 +7,7 @@ const formEvent = form.addEventListener("submit", (event) => {
 });
 
 const sendMail = (mail) => {
-  fetch("https://best-shop-landing-page.herokuapp.com/send", {
+  fetch("https://radiant-retreat-64533.herokuapp.com/send", {
     method: "post",
     body: mail,
   }).then((response) => {
