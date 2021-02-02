@@ -4,7 +4,8 @@ const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
 require("dotenv").config();
 
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 const app = express();
 
@@ -16,8 +17,8 @@ const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
   auth: {
-    user: process.env.EMAIL,
-    pass: process.env.PASS,
+    user: "testmail03072020@gmail.com",
+    pass: "PaSS1234",
   },
 });
 
@@ -40,9 +41,10 @@ app.post("/send", (req, res) => {
     console.log(data);
     const mail = {
       sender: `${data.name} <${data.email}>`,
-      to: process.env.EMAIL,
+      to: "testmail03072020@gmail.com",
       subject: "New contact request",
-      text: `${data.name} <${data.email}> \n${data.message}`,
+      //text: `${data.name} <${data.email}> \n${data.message}`,
+      text: `${data.name} <${data.email}>`,
     };
     transporter.sendMail(mail, (err, data) => {
       if (err) {
